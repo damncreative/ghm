@@ -1,0 +1,16 @@
+{
+  "name": "GHM",
+  "description": "Github Manager - Tool for Githubber",
+  "main": "app/index.html",
+
+  "window": {
+    "frame": false,
+    "width": 1200,
+    "min_width": 320,
+    "position": "center",
+    "height": 700,
+    "min_height": 480,
+
+    "icon": "app/img/g-octocat.png"
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title app-title>ho</title>
+
+  <!-- CONFIG -->
+  <script>
+    window.addEventListener('keydown', function (e) {
+      if (e.keyIdentifier === 'F12') {
+        require('nw.gui').Window.get().showDevTools();
+      }
+    });
+  </script>
+  <style>
+    [ng-cloak] {
+      display: none;
+      opacity: 0;
+    }
+    </style>
+</head>
+<body>
+  
+  
+
+  <!-- Scripts loader -->
+  <script src="lib/LAB/LAB.min.js"></script>
+
+  <!--Load custom script -->
+  <script src="scripts/frame.js"></script>
+  <script src="scripts/load.js"></script>
+
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/angular/i18n/angular-locale_de-de.js"></script>
+
+  
+  <!-- Allows for coffeescript compiling on the fly.                                    -->
+  <!-- Not recommended for production use. See http://coffeescript.org/#scripts.        -->
+  <script src="lib/coffeescript/coffee-script.js"></script>
+
+  <script src="coffee/services.coffee" type="text/coffeescript"></script>
+  <script src="coffee/controllers.coffee" type="text/coffeescript"></script>
+  <script src="coffee/filters.coffee" type="text/coffeescript"></script>
+  <script src="coffee/directives.coffee" type="text/coffeescript"></script>
+  <script src="coffee/app.coffee" type="text/coffeescript"></script>
+
+</body>
+</html>
